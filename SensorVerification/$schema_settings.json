@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://json-schema.org/draft-07/schema#",
+    "title": "Sensor verification settings schema",
+    "description": "A JSON Schema for sensor verification settings",
+    "definitions": {
+        "catalogURL": {
+            "description": "URL where find the catalog",
+            "type": "string"
+        },
+        "verCheckTime": {
+            "description": "seconds for checking if the sensor is working - 86400 = 1 day",
+            "type": "integer"
+        },
+        "tiemforupdate": {
+            "description": "time for update the bot",
+            "type": "integer"
+        },
+        "serviceData":{
+            "description": "list of sensors",
+            "type":"object",
+            "properties": {
+                "serviceName": {
+                    "description": "name of the service",
+                    "type": "string"
+                },
+                "serviceID": {
+                    "description": "ID of the service",
+                    "type": "string"
+                },
+                "timestamp": {
+                    "description": "adding service timestamp",
+                    "type": "string"
+                }
+            }
+        }
+        
+    
+    },
+
+    "type": "object",
+    "properties": {
+       "catalogURL": { "$ref": "#definitions/catalogURL"},
+       "verCheckTime": { "$ref": "#definitions/verCheckTime"},
+       "tiemforupdate": { "$ref": "#definitions/tiemforupdate"},
+       "serviceData": { "$ref": "#definitions/serviceData"}
+    }
+}

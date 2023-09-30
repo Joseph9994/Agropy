@@ -1,0 +1,10 @@
+{   "catalogURL":"http://127.0.0.1:8080",
+    "timeforupdate":20,
+    "ServiceData":
+    {
+        "serviceName":"RPi",
+        "microID": "",
+        "MQTT_Topic": "/Agrion/Data/+/StatusFreezing", 
+        "timestamp": ""
+    }
+}

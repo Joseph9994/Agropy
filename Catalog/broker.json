@@ -1,0 +1,7 @@
+{"broker":{
+    "url": "test.mosquitto.org",
+    "port": 1883,
+    "topic_freezing": "/StatusFreezing",
+    "topic_statistics": "/Statistics"
+    }
+}

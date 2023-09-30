@@ -1,0 +1,13 @@
+{   "catalogURL":"http://127.0.0.1:8080",
+    "timeforupdate":20,
+    "ServiceData":
+    {
+        "serviceName":"Statistics",
+        "serviceID": "",
+        "MQTT_Topic":{
+            "subscribeTopic":"/statDate",
+            "publishTopic" : "/Statistic"
+        }, 
+        "timestamp": ""
+    }
+}

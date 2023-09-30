@@ -1,0 +1,280 @@
+[
+    {
+        "id": "",
+        "type": "tab",
+        "label": "AgroPy",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "",
+        "type": "group",
+        "z": "",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            
+        ],
+        "x": 354,
+        "y": 479,
+        "w": 492,
+        "h": 202
+    },
+    {
+        "id": "",
+        "type": "group",
+        "z": "",
+        "name": "",
+        "style": {
+            "stroke": "#92d04f",
+            "label": true,
+            "color": "#92d04f"
+        },
+        "nodes": [
+            
+        ],
+        "x": 354,
+        "y": 219,
+        "w": 492,
+        "h": 202
+    },
+    {
+        "id": "",
+        "type": "inject",
+        "z": "",
+        "g": "",
+        "name": "Sensor2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "patients",
+        "payload": "",
+        "payloadType": "date",
+        "x": 460,
+        "y": 580,
+        "wires": [
+            [
+               
+            ]
+        ]
+    },
+    {
+        "id": "",
+        "type": "ui_template",
+        "z": "",
+        "g": "",
+        "group": "",
+        "name": "Wet Temperature Plot",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<iframe width=\"450\" height=\"250\" style=\"border: 1px solid #cccccc;\" src=\"https://thingspeak.com/channels/123456/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "",
+        "type": "ui_template",
+        "z": "",
+        "g": "",
+        "group": "",
+        "name": "Humidity Plot",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<iframe width=\"450\" height=\"250\" style=\"border: 1px solid #cccccc;\" src=\"https://thingspeak.com/channels/123456/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 700,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "",
+        "type": "ui_template",
+        "z": "",
+        "g": "",
+        "group": "",
+        "name": "Dry Temperature Plot",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<iframe width=\"450\" height=\"250\" style=\"border: 1px solid #cccccc;\" src=\"https://thingspeak.com/channels/123456/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "",
+        "type": "inject",
+        "z": "",
+        "g": "",
+        "name": "Sensor5",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "patients",
+        "payload": "",
+        "payloadType": "date",
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                
+            ]
+        ]
+    },
+    {
+        "id": "",
+        "type": "ui_template",
+        "z": "",
+        "g": "",
+        "group": "",
+        "name": "Wet Temperature Plot",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "format": "<iframe width=\"450\" height=\"250\" style=\"position: absolute; height: 100%; border: none\" src=\"https://thingspeak.com/channels/123456/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\">\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "",
+        "type": "ui_template",
+        "z": "",
+        "g": "",
+        "group": "",
+        "name": "Humidity Plot",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "format": "<iframe width=\"450\" height=\"250\" style=\"position: absolute; height: 100%; border: none\" src=\"https://thingspeak.com/channels/123456/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 700,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "",
+        "type": "ui_template",
+        "z": "",
+        "g": "",
+        "group": "",
+        "name": "Dry Temperature Plot",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "format": "<iframe width=\"450\" height=\"250\" style=\"position: absolute; height: 100%; border: none\" src=\"https://thingspeak.com/channels/123456/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\">\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "",
+        "type": "ui_group",
+        "name": "Data",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "",
+        "type": "ui_group",
+        "name": "Data",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "",
+        "type": "ui_tab",
+        "name": "Node 2",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "",
+        "type": "ui_tab",
+        "name": "Node 5",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]

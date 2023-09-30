@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://json-schema.org/draft-07/schema#",
+    "title": "Data from Sensor settings schema",
+    "description": "A JSON Schema for DataFromSensors settings",
+    "definitions": {
+        "catalogURL": {
+            "description": "URL where find the catalog",
+            "type": "string"
+        },
+        "tiemforupdate": {
+            "description": "time for update the bot",
+            "type": "integer"
+        },
+        "sensors":{
+            "description": "list of sensors",
+            "type":"object",
+            "properties": {
+                "sensorName": {
+                    "description": "name of the sensor",
+                    "type": "string"
+                },
+                "sensorID": {
+                    "description": "ID of the sensor",
+                    "type": "string"
+                },
+                "MQTT_Topic": {
+                    "description": "MQTT configuration topic",
+                    "type": "string"
+                },
+                "companyName": {
+                    "description": "name of the company",
+                    "type": "string"
+                },
+                "sensor_type": {
+                    "description": "type of the sensor",
+                    "type": "string"
+                },
+                "thingspeakAPIkey": {
+                    "description": "API key of thingspeak",
+                    "type": "string"
+                },
+                "TSchannelID": {
+                    "description": "ID of the thingspeak channel",
+                    "type": "integer"
+                },
+                "timestamp": {
+                    "description": "adding sensor timestamp",
+                    "type": "string"
+                }
+            }
+        }
+        
+    
+    },
+
+    "type": "object",
+    "properties": {
+       "catalogURL": { "$ref": "#definitions/catalogURL"},
+       "tiemforupdate": { "$ref": "#definitions/tiemforupdate"},
+       "sensors": { "$ref": "#definitions/sensors"}
+    }
+}

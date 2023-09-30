@@ -1,0 +1,16 @@
+{   "catalogURL":"http://127.0.0.1:8080",
+    "timeforupdate":20,
+    "telegramToken":"",
+    "ServiceData": 
+    {
+        "serviceName":"Agrion_Bot",
+        "serviceID": "",
+        "MQTT_Topic": {
+            "FreezeSubTopic": "/Agrion/Data/+/StatusFreezing",
+            "DatePubTopic": "/statDate",
+            "brokenNodeSubTopic": "/Agrion/Data/+/status",
+            "statTopic":"/Statistic"
+        },
+        "timestamp": ""
+    }
+}

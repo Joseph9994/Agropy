@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://json-schema.org/draft-07/schema#",
+    "title": "statistics settings schema",
+    "description": "A JSON Schema for statistics settings",
+    "definitions": {
+        "catalogURL": {
+            "description": "URL where find the catalog",
+            "type": "string"
+        },
+        "tiemforupdate": {
+            "description": "time for update the bot",
+            "type": "integer"
+        },
+        "serviceData":{
+            "description": "list of sensors",
+            "type":"object",
+            "properties": {
+                "serviceName": {
+                    "description": "name of the service",
+                    "type": "string"
+                },
+                "serviceID": {
+                    "description": "ID of the service",
+                    "type": "string"
+                },
+                "MQTT_Topic": {
+                    "description": "MQTT configuration topic",
+                    "type": "string"
+                },
+                "timestamp": {
+                    "description": "adding service timestamp",
+                    "type": "string"
+                }
+            }
+        }
+        
+    
+    },
+
+    "type": "object",
+    "properties": {
+       "catalogURL": { "$ref": "#definitions/catalogURL"},
+       "tiemforupdate": { "$ref": "#definitions/tiemforupdate"},
+       "serviceData": { "$ref": "#definitions/serviceData"}
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "catalogURL": "http://127.0.0.1:8080",
+    "timeforupdate": 20,
+    "sensors": [
+        {
+            "sensorName": "Node2Sensor",
+            "sensorID": "",
+            "MQTT_Topic": "/Agrion/Data/node-2",
+            "companyName": "Agrion",
+            "sensor_type": "",
+            "thingspeakAPIkey": "",
+            "TSchannelID": ,
+            "timestamp": ""
+        },
+        {
+            "sensorName": "Node5Sensor",
+            "sensorID": "",
+            "MQTT_Topic": "/Agrion/Data/node-5",
+            "companyName": "Agrion",
+            "sensor_type": "",
+            "thingspeakAPIkey": "",
+            "TSchannelID": ,
+            "timestamp": ""
+        },
+        {
+            "sensorName": "SimulatedSensor",
+            "sensorID": "",
+            "MQTT_Topic": "/Agrion/Data/simulated",
+            "companyName": "Agrion",
+            "sensor_type": "",
+            "thingspeakAPIkey": "",
+            "TSchannelID": ,
+            "timestamp": ""
+        }
+    ]
+}

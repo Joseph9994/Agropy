@@ -1,0 +1,129 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://json-schema.org/draft-07/schema#",
+    "title": "Catalog",
+    "description": "A JSON Schema for Catalog",
+    "definitions": {
+       "broker": {
+            "type": "object",
+            "properties": {
+                "url": {"type": "string"},
+                "port": {"type": "integer"},
+                "topic_data": {
+                    "description": "topic used for data retrieval from sensors",
+                    "type": "string"
+                },
+                "topic_freezing": {
+                    "description": "topic used for communicate freezing status",
+                    "type": "string"
+                },
+                "topic_statistics": {
+                    "description": "topic used for statistics",
+                    "type": "string"
+                },
+                "topic_telegrambot": {
+                    "description": "topic used for communicate with the telegram bot",
+                    "type": "string"
+                }
+            }
+        },
+            
+       "services": {
+            "type":"object",
+            "properties": {
+                "serviceName": {
+                    "description": "name of the service",
+                    "type": "string"
+                },
+                "serviceID": {
+                    "description": "ID of the service",
+                    "type": "number"
+                },
+                "MQTT_Topic": {
+                    "description": "MQTT configuration",
+                    "type":"object"
+                },
+                "timestamp":{
+                    "description": "timestamp in which the service is added to the catalog ",
+                    "type":"number"
+                }
+
+            }
+       },
+       "sensors": {
+            "type":"object",
+            "properties": {
+                "sensorName": {
+                    "description": "sensor name",
+                    "type":"string"
+                },
+                "sensorID": {
+                    "description": "sensor ID",
+                    "type":"string"
+                },
+                "MQTT_Topic": {
+                    "description": "topic path",
+                    "type":"string"
+                },
+                "companyName": {
+                    "description": "company name",
+                    "type":"string"
+                },
+                "sensor_type": {
+                    "description": "type of the sensor",
+                    "type":"string"
+                },
+                "thingspeakAPIkey": {
+                    "description": "API key of thingspeak",
+                    "type":"string"
+                },
+                "TSchannelID": {
+                    "description": "ID of the thinspeak channel",
+                    "type":"number"
+                },
+                "timestamp": {
+                    "description": "timestamp in which the sensor is added to the catalog ",
+                    "type":"string"
+                }
+            }
+       },
+       "microcontrollers": {
+            "description": "it is a list of all the microcontrollers (Raspberry Pi) running in the catalog",
+            "type":"object",
+            "properties": {
+                "serviceName": {
+                    "description": "service name of the microcontroller",
+                    "type": "string"
+                },
+                "microID": {
+                    "description": "ID of the microcontroller",
+                    "type": "integer"
+                },
+                "MQTT_Topic": {
+                    "description": "MQTT topic configuration",
+                    "type":"string"
+                },
+                "timestamp": {
+                    "description": "timestamp when the microcontroller was registered in the catalog",
+                    "type": "number"
+                }
+            }
+       },
+       "Last_catalog_update": {
+            "description": "timestamp of the last update, it is automatically updated by the system",
+            "type": "number"
+        }
+    },
+    
+    "type": "object",
+    "properties": {
+       "broker": { "$ref": "#definitions/broker"},
+       "services": { "$ref": "#definitions/services"},
+       "sensors": { "$ref": "#definitions/sensors"},
+       "microcontrollers": { "$ref": "#definitions/microcontrollers"},
+       "Last_catalog_update": { "$ref": "#definitions/Last_catalog_update" }
+
+    }
+ }
+
+ 

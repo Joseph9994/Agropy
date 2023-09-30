@@ -1,0 +1,56 @@
+{
+    "broker": {
+        "url": "test.mosquitto.org",
+        "port": 1883,
+        "topic_freezing": "/StatusFreezing",
+        "topic_statistics": "/Statistics"
+    },
+    "services": [
+        {
+            "serviceName": "TSAdaptor",
+            "serviceID": "",
+            "MQTT_Topic": "/Agrion/Data/+",
+            "timestamp": 1662731049.527078
+        },
+        {
+            "serviceName": "freezingAlert",
+            "serviceID": "",
+            "MQTT_Topic": "/Agrion/Data/+",
+            "timestamp": 1662731066.210697
+        }
+    ],
+    "sensors": [
+        {
+            "sensorName": "SimulatedSensor",
+            "sensorID": "",
+            "MQTT_Topic": "/Agrion/Data/simulated",
+            "companyName": "Agrion",
+            "sensor_type": "",
+            "thingspeakAPIkey": "",
+            "TSchannelID": ,
+            "timestamp": 1662727070.465333
+        },
+        {
+            "sensorName": "Node2Sensor",
+            "sensorID": "",
+            "MQTT_Topic": "/Agrion/Data/node-2",
+            "companyName": "Agrion",
+            "sensor_type": "",
+            "thingspeakAPIkey": "",
+            "TSchannelID": ,
+            "timestamp": 1662727061.800523
+        },
+        {
+            "sensorName": "Node5Sensor",
+            "sensorID": "",
+            "MQTT_Topic": "/Agrion/Data/node-5",
+            "companyName": "Agrion",
+            "sensor_type": "",
+            "thingspeakAPIkey": "",
+            "TSchannelID": ,
+            "timestamp": 1662729781.578346
+        }
+    ],
+    "microcontrollers": [],
+    "Last_catalog_update": 1662731076.62915
+}

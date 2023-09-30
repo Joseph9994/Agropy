@@ -1,0 +1,10 @@
+{
+    "server": "",
+    "port": "1883",
+    "topic": {
+        "node2": "",
+        "node5": ""
+    },
+    "user": "",
+    "password": ""
+}
