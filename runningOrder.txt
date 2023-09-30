@@ -1,0 +1,12 @@
+Oder to run: 
+1. Catalog --> Catalog.py
+2. DataFromSensors --> agrionSensors.py / SimulatedSensor.py
+3. FreezingAlert --> freezingAlert.py
+4. Statistics --> statistics.py
+5. TSAdaptor --> TSAdaptor.py
+6. SensorVerification --> sensorVerification.py
+7. RPi --> Rpi.py
+8. BOT --> BOT.py
+
+note: NodeRed needs a ngrok tunnel to work
+
